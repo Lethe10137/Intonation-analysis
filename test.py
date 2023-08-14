@@ -8,10 +8,18 @@ base_line_color =  'white'
 line_color = 'green'
 tone_choice = 'C'
 
+#筒音作5
+diff = [0, 2, 4, 5, 7, 9, 11]
+
+#筒音作2
+diff = [0, 2, 4, 5, 7, 9, 10]
+
+#筒音作3
+diff = [0, 2, 3, 5, 7, 8, 10]
 
 
 class Tonality:
-    base_diff = [0, 2, 4, 5, 7, 9, 11]
+    base_diff = diff
     tones = ['A', 'A#', 'B','C','C#','D','D#','E','F','F#','G','G#']
     def __init__(self, tone):
         assert tone.upper() in self. tones
